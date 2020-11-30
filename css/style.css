@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root{
+    --primary-color: #ee8a66;
+    --secondary-color: #db5626 ;
+    --dark-color: #882c0b;
+    --light-color: #f4f4f4;
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    
+    color: #fff;
+    font-family: 'lato', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  a{
+    text-decoration: none;
+    color:inherit;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--dark-color);
+    padding:0;
+    margin-bottom:0;
+    text-align: center;
+    
+  }
+  h2{
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: underline;
+
+  }
+  #carrier1, #carrier2{
+    font-size: 20px;
+  }
+  .counterRow{  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);        
+    background-color: var(--dark-color);
+    height: 20vh;
+    padding: 10px 5px;
+    position: relative;
+    /*overflow: visible;*/
+  }
+  .counterRow > *:first-child{
+    grid-column: 1/span 4;
+    grid-row: 1/ span 2;
+    text-align: center;
+  }
+  .counterRow span{
+    display: inline;
+  }
+  
+  .flex img{
+    height: 280px;
+    width: 200px;
+    justify-self: center;
+    margin: 0px;
+    flex-wrap: wrap;
+    
+  }
+  .container .card{
+   max-width: 500px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+
+}
+  .flex img:hover{/
+    transform: translateY(-15px);
+  }
+  .flex {
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #result {
+    font-size: 36px;
+    color: #fff;
+    padding: 0% 27%;
+    text-align: center;
+  }
+  
+  #ans {
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 26px;
+    background: transparent;
+    border: 0; 
+    text-align: center;
+  }
+  
+  #ans:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
